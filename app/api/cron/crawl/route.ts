@@ -58,7 +58,7 @@ export async function GET(request: NextRequest) {
 日付は必ず「YYYY-MM-DD」形式に変換してください。開始時刻と終了時刻は「HH:MM」形式にしてください（不明な場合は null にしてください）。`;
 
     const response = await ai.models.generateContent({
-      model: "gemini-1.5-flash",
+      model: "gemini-2.0-flash",
       contents: prompt,
       config: {
         tools: [{ googleSearch: {} }],
